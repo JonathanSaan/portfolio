@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #131819;
+}
+
+nav {
+  display: flex;
+  background-color: #00000096;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+ul li a {
+  font-weight: 600;
+  color: #dee0e1;
+  text-shadow: 5px 5px 9px rgba(0,0,0,0.6);
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: #7847df;
+}
+
+div#inicio {
+  display: flex;
+  align-items: center;
+  height: 30rem;
+  width: 100vw;
+  background: url("img/programmer.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+div#inicio div#content {
+  margin-left: 7%;
+}
+
+h2 {
+  text-shadow: 0px 5px 5px #000000;
+  font-size: 2rem;
+  color: #dee0e1;
+}
+
+i#color {
+  text-shadow: 4px 3px 0 #3f1696ff;
+  color: #7847df;
+}
+
+div#sobre {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: #232829;
+  padding: 50px 0 50px;
+  text-align: center;
+  font-size: 21px;
+}
+
+div#sobre div#eu {
+  margin: 10px auto;
+  width: 70%;
+}
+
+div#sobre div#eu p {
+  margin: 10px 0;
+  color: #dee0e1;
+}
+
+div#projetos {
+  display: inline-block;
+  background-color: #33415f;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+div#Lista-de-projetos {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-direction: center;
+  padding-top: 15px;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+div#Lista-de-projetos div {
+  display: flex;
+  max-height: 15rem;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div#Lista-de-projetos div img {
+  height: 10vh;
+  min-height: 160px;
+}
+
+div#Lista-de-projetos div button {
+  border: none;
+  background-color: #5574e5;
+  height: 30px;
+  padding: 3px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+div#Lista-de-projetos div button a {
+  text-decoration: none;
+  color: #dee0e1;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*flex-direction: column;*/
+  background-color: #232829;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  bottom: 0;
+}
+
+div#contato hr{
+  width: 70px;
+  border: 1px solid #7847df;
+  margin-bottom: 20px;
+}
+
+div#contato{
+  background-color: red;
+}
+
+div#contato div#informacao-contato p{
+  margin-top: 5px;  
+  color: #dee0e1;
+}
