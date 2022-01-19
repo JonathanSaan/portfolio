@@ -124,8 +124,9 @@ div#Lista-de-projetos div img {
 }
 
 div#Lista-de-projetos div p {
+  font-size: 12px;
   color: #dee0e1;
-  width: 95%;
+  width: 85%;
 }
 
 div#Lista-de-projetos div button {
