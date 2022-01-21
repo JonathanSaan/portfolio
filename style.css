@@ -68,10 +68,6 @@ h2 {
 }
 
 h2#color {
-  /*text-shadow: 4px 3px 0 #3f1696ff; 
-  color: #7847df;
-  text-shadow: 4px 3px 0 white;
-  */
   color: #20ac16;
   width: 0ch;
   animation: text 6s steps(8) infinite;
@@ -100,10 +96,10 @@ div#sobre {
 
 div#sobre div#eu {
   margin: 10px auto;
-  width: 70%;
+  width: 78%;
 }
 
-p{ 
+p {
   text-shadow: 0px 3px 5px #000000;
 }
 
