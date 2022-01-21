@@ -61,15 +61,18 @@ div#inicio div#content {
 
 h2 {
   display: inline-block;
-  text-shadow: 0px 5px 5px #000000;
+  text-shadow: 0px 3px 5px #000000;
   font-size: 2rem;
   color: #dee0e1;
   overflow: hidden;
 }
 
 h2#color {
-  text-shadow: 4px 3px 0 #3f1696ff;
+  /*text-shadow: 4px 3px 0 #3f1696ff; 
   color: #7847df;
+  text-shadow: 4px 3px 0 white;
+  */
+  color: #20ac16;
   width: 0ch;
   animation: text 6s steps(8) infinite;
   border-right: 3px solid black;
@@ -98,6 +101,10 @@ div#sobre {
 div#sobre div#eu {
   margin: 10px auto;
   width: 70%;
+}
+
+p{ 
+  text-shadow: 0px 3px 5px #000000;
 }
 
 div#sobre div#eu p {
@@ -142,6 +149,7 @@ div#Lista-de-projetos div p {
   font-size: 12px;
   color: #dee0e1;
   width: 85%;
+  margin-top: 10px;
 }
 
 div#Lista-de-projetos div button {
@@ -149,7 +157,7 @@ div#Lista-de-projetos div button {
   background-color: #5574e5;
   height: 30px;
   padding: 3px;
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 4px;
 }
 
