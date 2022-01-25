@@ -97,6 +97,7 @@ div#sobre {
 div#sobre div#eu {
   margin: 10px auto;
   width: 80vw;
+  max-width: 85vw;
 }
 
 p {
