@@ -19,7 +19,7 @@ nav {
   display: flex;
   background-color: #00000096;
   position: fixed;
-  height: 40px;
+  height: 50px;
   width: 100%;
   align-items: center;
   justify-content: flex-end;
@@ -96,7 +96,7 @@ div#sobre {
 
 div#sobre div#eu {
   margin: 10px auto;
-  width: 78%;
+  width: 80vw;
 }
 
 p {
