@@ -118,13 +118,13 @@ div#projetos {
   height: 100%;
   width: 100%;
 }
-
+  
 div#Lista-de-projetos {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 15px;
-  width: 100%;
 }
 
 div#Lista-de-projetos div {
@@ -133,8 +133,8 @@ div#Lista-de-projetos div {
   background-color: #232829;
   width: 28%;
   padding: 10px 0;
+  margin: 10px 40px 0 40px;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 
@@ -196,9 +196,6 @@ div#contato div#informacao-contato img {
 }
 
 @media(max-width: 900px) {
-  div#Lista-de-projetos {
-    flex-direction: column;
-  }
   div#Lista-de-projetos div {
     width: 70%;
     margin-top: 30px;
