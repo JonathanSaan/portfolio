@@ -7,10 +7,6 @@
   outline: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #131819;
 }
@@ -37,6 +33,7 @@ ul li {
 
 nav ul li a {
   font-weight: 600;
+  font-size: 14px;
   color: #dee0e1;
   text-shadow: 5px 5px 9px rgba(0,0,0,0.6);
 }
@@ -50,9 +47,6 @@ div#inicio {
   align-items: center;
   height: 30rem;
   width: 100vw;
-  background: url("img/programmer.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 div#inicio div#content {
@@ -70,7 +64,9 @@ h2 {
 h2#color {
   color: #20ac16;
   width: 0ch;
-  animation: text 6s steps(8) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 5s steps(8) infinite;
   border-right: 3px solid black;
 }
 
@@ -93,6 +89,7 @@ div#sobre {
   text-align: center;
   font-size: 21px;
 }
+
 
 div#sobre div#eu {
   margin: 10px auto;
@@ -117,8 +114,55 @@ div#sobre button {
   background-color: #7847df;
 }
 
-div#sobre button a{
+div#sobre button a {
   color: #dee0e1;
+}
+
+div#what-i-do {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 30px 0 30px 0;
+  height: 100%;
+  width: 100%;
+}
+
+div#what-i-do div#what-does {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  width: 80vw;
+}
+
+div#what-i-do div#what-does div{
+  padding: 0 23px;
+  height: 200px;
+  width: 180px;
+  margin: 5px;
+  background-color: #232829;
+  border-radius: 5px;
+}
+
+div#what-i-do div#what-does div:nth-child(1) img{
+  height: 35px;
+  margin: 7px;
+}
+
+div#what-i-do div#what-does div img{
+  height: 50px;
+}
+
+div#what-i-do div#what-does div h3{
+  color: #dee0e1;
+  white-space: nowrap;
+}
+
+div#what-i-do div#what-does div p{
+  margin: 5px 0;
+  text-shadow: none;
+  color: #dee0e1;
+  font-size: .8em;
 }
 
 div#projetos {
@@ -142,6 +186,7 @@ div#Lista-de-projetos {
 div#Lista-de-projetos div {
   display: flex;
   border: 2px solid black;
+  border-radius: 5px;
   background-color: #232829;
   width: 28%;
   padding: 10px 0;
