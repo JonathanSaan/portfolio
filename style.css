@@ -135,7 +135,7 @@ div#what-i-do div#what-does {
   width: 80vw;
 }
 
-div#what-i-do div#what-does div{
+div#what-i-do div#what-does div {
   padding: 0 23px;
   height: 200px;
   width: 180px;
@@ -144,21 +144,21 @@ div#what-i-do div#what-does div{
   border-radius: 5px;
 }
 
-div#what-i-do div#what-does div:nth-child(1) img{
+div#what-i-do div#what-does div:nth-child(1) img {
   height: 35px;
-  margin: 7px;
+  margin: 10px;
 }
 
-div#what-i-do div#what-does div img{
-  height: 50px;
+div#what-i-do div#what-does div img {
+  height: 55px;
 }
 
-div#what-i-do div#what-does div h3{
+div#what-i-do div#what-does div h3 {
   color: #dee0e1;
   white-space: nowrap;
 }
 
-div#what-i-do div#what-does div p{
+div#what-i-do div#what-does div p {
   margin: 10px 0;
   text-shadow: none;
   color: #dee0e1;
