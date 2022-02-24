@@ -53,15 +53,15 @@ div#inicio div#content {
   margin: 0 0 0 7%;
 }
 
-h2 {
+h1 {
   display: inline-block;
-  text-shadow: 0px 3px 5px #000000;
   font-size: 2rem;
+  text-shadow: 0px 3px 5px #000000;
   color: #dee0e1;
   overflow: hidden;
 }
 
-h2#color {
+h1#color {
   color: #20ac16;
   width: 0ch;
   overflow: hidden;
@@ -78,6 +78,27 @@ h2#color {
     width: 8ch;
   }
 }
+
+h2 {
+  position: relative;
+  font-size: 2rem;
+  color: #dee0e1;
+  text-shadow: 0px 3px 5px #000000;
+  margin: 5px;
+  text-align: center;
+}
+h2::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: .18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2.7rem;
+  background-color: #7847df;
+}
+
 
 div#sobre {
   display: flex;
@@ -226,18 +247,20 @@ footer {
   flex-direction: center;
   background-color: #232829;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   bottom: 0;
 }
 
-div#contato hr {
-  width: 70px;
-  border: 1px solid #7847df;
-  margin: 0 0 20px 0;
+div#contato div#informacao-contato {
+  margin: 30px 0;
+}
+
+div#contato div#informacao-contato img {
+  height: 20px;
 }
 
 div#contato div#informacao-contato ul li {
-  display: inline;
+  display: display;
   min-width: 10px;
   margin: 5px 0;
   color: #dee0e1;
@@ -247,14 +270,6 @@ div#contato div#informacao-contato ul li a {
   color: #dee0e1;
 }
 
-div#contato div#informacao-contato img#endereco {
-  margin: 0 17px 0;
-}
-
-div#contato div#informacao-contato img {
-  height: 20px;
-  margin: 0 10px 0;
-}
 
 @media(max-width: 900px) {
   div#Lista-de-projetos div {
