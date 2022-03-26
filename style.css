@@ -157,9 +157,9 @@ div#what-i-do div#what-does {
 }
 
 div#what-i-do div#what-does div {
-  padding: 0 23px;
+  padding: 0 10px;
   height: 200px;
-  width: 180px;
+  width: 200px;
   margin: 5px;
   background-color: #232829;
   border-radius: 5px;
@@ -181,6 +181,8 @@ div#what-i-do div#what-does div h3 {
 
 div#what-i-do div#what-does div p {
   margin: 10px 0;
+  max-width: 180px;
+  text-align: center;
   text-shadow: none;
   color: #dee0e1;
   font-size: .8em;
@@ -272,6 +274,17 @@ div#contato div#informacao-contato ul li a {
 
 
 @media(max-width: 900px) {
+  div#what-i-do div#what-does div {
+    padding: 10px;
+    min-width: 160px;
+  }
+  div#what-i-do div#what-does div h3 {
+    font-size: 15px;
+  }
+  div#what-i-do div#what-does div p {
+    font-size: .6rem;
+    max-width: 140px;
+  }
   div#Lista-de-projetos div {
     width: 70%;
     margin: 10px 0;
