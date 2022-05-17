@@ -127,17 +127,6 @@ div#sobre div#eu p {
   color: #dee0e1;
 }
 
-div#sobre button {
-  margin: 2% 0;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #7847df;
-}
-
-div#sobre button a {
-  color: #dee0e1;
-}
 
 div#what-i-do {
   display: flex;
@@ -220,6 +209,11 @@ div#Lista-de-projetos div {
 
 div#Lista-de-projetos div img {
   height: 100px;
+}
+
+div#Lista-de-projetos div img:hover {
+  transition: 350ms;
+  transform: scale(1.06);
 }
 
 div#Lista-de-projetos div p {
