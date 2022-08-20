@@ -1,4 +1,3 @@
-document.querySelector('#inicio').style.background = "url('img/programmer.jpg') no-repeat";
 document.querySelector("#inicio").style.backgroundSize = "100% 100%";
 
 const menu_links = document.querySelectorAll('nav a');
