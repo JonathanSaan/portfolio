@@ -193,7 +193,7 @@ div#Lista-de-projetos div {
   border: 2px solid black;
   border-radius: 5px;
   background-color: #232829;
-  width: 28%;
+  width: 30vw;
   padding: 10px 0;
   margin: 30px 40px 0 40px;
   align-items: center;
@@ -202,6 +202,7 @@ div#Lista-de-projetos div {
 
 div#Lista-de-projetos div img {
   height: 100px;
+  width: 200px;
 }
 
 div#Lista-de-projetos div img:hover {
@@ -273,7 +274,7 @@ div#contato div#informacao-contato ul li a {
 }
 
 
-@media(max-width: 900px) {
+@media(max-width: 700px) {
   div#what-i-do div#what-does div {
     min-width: 160px;
   }
