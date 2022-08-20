@@ -22,11 +22,11 @@ nav {
   z-index: 2;
 }
 
-ul {
+nav ul {
   display: flex;
 }
 
-ul li {
+nav ul li {
   list-style-type: none;
   margin: 0 10px 0;
 }
@@ -47,6 +47,7 @@ div#inicio {
   align-items: center;
   height: 30rem;
   width: 100vw;
+  background: url('img/programmer.jpg') no-repeat;
 }
 
 div#inicio div#content {
@@ -111,22 +112,16 @@ div#sobre {
   font-size: 21px;
 }
 
-
 div#sobre div#eu {
-  margin: 10px auto;
+  margin: 20px auto;
   width: 80vw;
   max-width: 85vw;
-}
-
-p {
-  text-shadow: 0px 3px 5px #000000;
 }
 
 div#sobre div#eu p {
   margin: 10px 0;
   color: #dee0e1;
 }
-
 
 div#what-i-do {
   display: flex;
@@ -140,17 +135,15 @@ div#what-i-do {
 
 div#what-i-do div#what-does {
   display: flex;
-  justify-content: center;
-  margin: 20px 0;
+  justify-content: space-evenly;
+  margin: 30px 0;
   width: 80vw;
 }
 
 div#what-i-do div#what-does div {
-  padding: 0 10px;
-  height: 200px;
-  width: 200px;
+  padding: 30px 20px;
   margin: 5px;
-  background-color: #232829;
+  background-color: #232829; 
   border-radius: 5px;
 }
 
@@ -225,7 +218,7 @@ div#Lista-de-projetos div p {
 
 div#Lista-de-projetos div button {
   border: none;
-  background-color: #5574e5;
+  background-color: #7847df;
   height: 30px;
   padding: 3px;
   margin: 10px 0;
@@ -242,8 +235,7 @@ footer {
   justify-content: center;
   flex-direction: center;
   background-color: #232829;
-  padding-top: 50px;
-  padding-bottom: 10px;
+  padding: 50px 0 10px 0;
   bottom: 0;
 }
 
@@ -251,14 +243,28 @@ div#contato div#informacao-contato {
   margin: 30px 0;
 }
 
-div#contato div#informacao-contato img {
+div#contato div#informacao-contato ul {
+  display: flex;
+  list-style: none;
+  color: #dee0e1;
+  margin: 10px 0;
+}
+
+div#contato div#informacao-contato ul .li-img {
+  display: flex;
+  justify-content: center; 
+  width: 20px;
+  margin: 0 5px;
+}
+
+div#contato div#informacao-contato ul .li-img img {
+  display: flex;
   height: 20px;
 }
 
-div#contato div#informacao-contato ul li {
-  display: display;
-  min-width: 10px;
-  margin: 5px 0;
+div#contato div#informacao-contato ul li p {
+  list-style-type: none;
+  width: auto;
   color: #dee0e1;
 }
 
@@ -269,7 +275,6 @@ div#contato div#informacao-contato ul li a {
 
 @media(max-width: 900px) {
   div#what-i-do div#what-does div {
-    padding: 10px;
     min-width: 160px;
   }
   div#what-i-do div#what-does div h3 {
