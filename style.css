@@ -143,7 +143,7 @@ div#what-i-do div#what-does {
 div#what-i-do div#what-does div {
   padding: 30px 20px;
   margin: 5px;
-  background-color: #232829; 
+  background-color: #232829;
   border-radius: 5px;
 }
 
@@ -201,8 +201,8 @@ div#Lista-de-projetos div {
 }
 
 div#Lista-de-projetos div img {
-  height: 100px;
-  width: 200px;
+  height: 10vw;
+  width: 20vw;
 }
 
 div#Lista-de-projetos div img:hover {
@@ -253,7 +253,7 @@ div#contato div#informacao-contato ul {
 
 div#contato div#informacao-contato ul .li-img {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   width: 20px;
   margin: 0 5px;
 }
@@ -274,7 +274,7 @@ div#contato div#informacao-contato ul li a {
 }
 
 
-@media(max-width: 700px) {
+@media(max-width: 600px) {
   div#what-i-do div#what-does div {
     min-width: 160px;
   }
@@ -288,5 +288,9 @@ div#contato div#informacao-contato ul li a {
   div#Lista-de-projetos div {
     width: 70%;
     margin: 10px 0;
+  }
+  div#Lista-de-projetos div img {
+    height: 20vw;
+    width: 40vw;
   }
 }
