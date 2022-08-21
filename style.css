@@ -51,7 +51,7 @@ div#inicio {
 
 div#content {
   position: absolute;
-  margin: -250px 0 0 8%;
+  margin: -280px 0 0 8%;
 }
 
 h1 {
@@ -88,6 +88,7 @@ h2 {
   margin: 5px;
   text-align: center;
 }
+
 h2::after {
   position: absolute;
   content: "";
@@ -99,7 +100,6 @@ h2::after {
   top: 2.7rem;
   background-color: #7847df;
 }
-
 
 div#sobre {
   display: flex;
