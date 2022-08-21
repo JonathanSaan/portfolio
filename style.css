@@ -43,15 +43,15 @@ nav ul li a:hover {
 }
 
 div#inicio {
-  display: flex;
-  align-items: center;
   height: 30rem;
   width: 100vw;
   background: url('img/programmer.jpg') no-repeat;
+  filter: blur(3px);
 }
 
-div#inicio div#content {
-  margin: 0 0 0 7%;
+div#content {
+  position: absolute;
+  margin: -250px 0 0 8%;
 }
 
 h1 {
@@ -63,7 +63,7 @@ h1 {
 }
 
 h1#color {
-  color: #20ac16;
+  color: #7847df;
   width: 0ch;
   overflow: hidden;
   white-space: nowrap;
@@ -221,7 +221,7 @@ div#Lista-de-projetos div button {
   border: none;
   background-color: #7847df;
   height: 30px;
-  padding: 3px;
+  padding: 7px;
   margin: 10px 0;
   border-radius: 4px;
 }
