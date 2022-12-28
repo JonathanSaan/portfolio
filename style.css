@@ -44,7 +44,7 @@ nav ul li a:hover {
 
 div#inicio {
   height: 30rem;
-  width: 100vw;
+  width: 100%;
   background: url('img/programmer.jpg') no-repeat;
   filter: blur(3px);
 }
@@ -105,7 +105,7 @@ div#sobre {
   display: flex;
   flex-direction: column;
   height: 30rem;
-  width: 100vw;
+  width: 100%;
   background-color: #232829;
   padding: 50px 0 50px;
   text-align: center;
