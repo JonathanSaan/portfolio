@@ -130,7 +130,7 @@ div#what-i-do {
   flex-direction: column;
   margin: 30px 0 30px 0;
   height: 30rem;
-  width: 100vw;
+  width: 100%;
 }
 
 div#what-i-do div#what-does {
