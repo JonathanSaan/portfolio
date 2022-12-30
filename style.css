@@ -43,7 +43,7 @@ nav ul li a:hover {
 }
 
 div#inicio {
-  height: 30rem;
+  min-height: 33rem;
   width: 100%;
   background: url('img/programmer.jpg') no-repeat;
   filter: blur(3px);
