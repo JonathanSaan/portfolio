@@ -295,6 +295,7 @@ div#contato div#informacao-contato ul li a {
     font-size: 8vw;
   }
   h2::after {
+    width: 25vw;
     top: 11vw;
   }
   div#sobre {
