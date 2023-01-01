@@ -186,12 +186,14 @@ div#projetos {
 
 div#Lista-de-projetos {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 90%;
-  padding: 15px 0 0 0;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #232829;
+  width: 20em;
+  padding: 15px 0;
+  margin: 40px;
+  align-items: center;
+  flex-direction: column;
 }
 
 div#Lista-de-projetos div {
@@ -200,8 +202,8 @@ div#Lista-de-projetos div {
   border-radius: 5px;
   background-color: #232829;
   width: 20em;
-  padding: 20px 0;
-  margin: 40px;
+  padding: 15px 0;
+  margin: 40px 40px 0 40px;
   align-items: center;
   flex-direction: column;
 }
@@ -341,8 +343,7 @@ div#contato div#informacao-contato ul li a {
     margin: 10px 0;
   }
   div#Lista-de-projetos div img {
-    height: 20vw;
-    width: 40vw;
+    height: 30vw;
   }
   footer {
     padding: 1rem 0 0 0;
