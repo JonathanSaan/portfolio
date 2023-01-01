@@ -85,14 +85,14 @@ h2 {
   font-size: 3.5vw;
   color: #dee0e1;
   text-shadow: 0px 3px 5px #000000;
-  margin: 5px;
+  margin: 5px 0;
   text-align: center;
 }
 
 h2::after {
   position: absolute;
   content: "";
-  width: 70px;
+  width: 25vw;
   height: .18rem;
   left: 0;
   right: 0;
@@ -179,8 +179,7 @@ div#projetos {
   display: inline-block;
   background-color: #33415f;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding: 15px 0 30px 0;
   height: 100%;
   width: 100%;
 }
@@ -192,7 +191,7 @@ div#Lista-de-projetos {
   flex-wrap: wrap;
   margin: 0 auto;
   width: 90%;
-  padding-top: 15px;
+  padding: 15px 0 0 0;
 }
 
 div#Lista-de-projetos div {
@@ -283,8 +282,17 @@ div#contato div#informacao-contato ul li a {
   h1 {
     font-size: 8vw;
   }
+  div#inicio {
+    height: 140vw;
+  }
+  h2 {
+    font-size: 8vw;
+  }
+  h2::after {
+    top: 11vw;
+  }
   div#sobre {
-    height: 100%;
+    height: 140vw;
     width: 100%;
     font-size: 6vw;
   }
@@ -292,9 +300,11 @@ div#contato div#informacao-contato ul li a {
     width: 80vw;
     max-width: 85vw;
   }
+  div#sobre div#eu p {
+    margin: 1.5em 0 0 0;
+  }
   div#what-i-do {
-    min-height: 20em;
-    max-height: 21em;
+    height: 120vw;
     width: 100%;
   }
   div#what-i-do div#what-does {
@@ -319,6 +329,9 @@ div#contato div#informacao-contato ul li a {
     font-size: 3vw;
     max-width: 140px;
   }
+  div#Lista-de-projetos {
+    padding: 25px 0 0 0;
+  }
   div#Lista-de-projetos div {
     width: 70%;
     margin: 10px 0;
@@ -326,5 +339,11 @@ div#contato div#informacao-contato ul li a {
   div#Lista-de-projetos div img {
     height: 20vw;
     width: 40vw;
+  }
+  footer {
+    padding: 1rem 0 0 0;
+  }
+  div#contato div#informacao-contato {
+    margin: 15vw 0;
   }
 }
