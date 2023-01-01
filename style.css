@@ -190,7 +190,7 @@ div#Lista-de-projetos {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
   padding: 15px 0 0 0;
 }
 
@@ -201,7 +201,7 @@ div#Lista-de-projetos div {
   background-color: #232829;
   width: 20em;
   padding: 15px 0;
-  margin: 40px 40px 0 40px;
+  margin: 40px 30px 30px 30px;
   align-items: center;
   flex-direction: column;
 }
@@ -238,7 +238,7 @@ footer {
   justify-content: center;
   flex-direction: center;
   background-color: #232829;
-  padding: 50px 0 10px 0;
+  padding: 15px 0 10px 0;
   bottom: 0;
 }
 
