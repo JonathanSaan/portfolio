@@ -43,7 +43,7 @@ nav ul li a:hover {
 }
 
 div#inicio {
-  height: 40vw;
+  height: 60vw;
   width: 100%;
   background: url('img/programmer.jpg') no-repeat;
   filter: blur(3px);
@@ -51,7 +51,7 @@ div#inicio {
 
 div#content {
   position: absolute;
-  margin: -27vw 0 0 8%;
+  margin: -37vw 0 0 8%;
 }
 
 h1 {
@@ -281,13 +281,13 @@ div#contato div#informacao-contato ul li a {
     font-size: 3.5vw;
   }
   h1 {
-    font-size: 8vw;
+    font-size: 6vw;
   }
   div#inicio {
     height: 140vw;
   }
   div#content {
-    margin: -280px 0 0 8%;
+    margin: -90vw 0 0 8%;
   }
   h2 {
     font-size: 8vw;
@@ -342,7 +342,7 @@ div#contato div#informacao-contato ul li a {
     margin: 10px 0;
   }
   div#Lista-de-projetos div img {
-    height: 30vw;
+    height: 25vw;
   }
   footer {
     padding: 1rem 0 0 0;
