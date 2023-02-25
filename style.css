@@ -11,7 +11,7 @@ body {
   background-color: #131819;
 }
 
-nav {
+header nav {
   display: flex;
   background-color: #00000096;
   position: fixed;
@@ -22,39 +22,41 @@ nav {
   z-index: 2;
 }
 
-nav ul {
+header nav ul {
   display: flex;
 }
 
-nav ul li {
+header nav ul li {
   list-style-type: none;
   margin: 0 10px 0;
 }
 
-nav ul li a {
+header nav ul li a {
   font-weight: 600;
   font-size: 1em;
   color: #dee0e1;
   text-shadow: 5px 5px 9px rgba(0,0,0,0.6);
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
   color: #7847df;
 }
 
-div#inicio {
-  height: 50vw;
+div#background {
+  height: 45vw;
   width: 100%;
   background: url('img/programmer.jpg') no-repeat;
-  filter: blur(3px);
 }
 
-div#content {
+div#background div#background_content {
   position: absolute;
-  margin: -30vw 0 0 8%;
+  backdrop-filter: blur(10px);
+  height: 47vw;
+  width: 100%;
+  padding: 17vw 0 0 8%;
 }
 
-h1 {
+div#background div#background_content h1 {
   display: inline-block;
   font-size: 3vw;
   text-shadow: 0px 3px 5px #000000;
@@ -62,7 +64,8 @@ h1 {
   overflow: hidden;
 }
 
-h1#color {
+div#background div#background_content h1#background_content_name {
+  margin: 0 0 0 .6rem;
   color: #7847df;
   width: 0ch;
   overflow: hidden;
@@ -82,26 +85,26 @@ h1#color {
 
 h2 {
   position: relative;
-  font-size: 3.5vw;
+  font-size: 2.3vw;
   color: #dee0e1;
   text-shadow: 0px 3px 5px #000000;
-  margin: 5px 0;
+  margin: 2rem 0 5px 0;
   text-align: center;
 }
 
 h2::after {
   position: absolute;
   content: "";
-  width: 15vw;
+  width: 7vw;
   height: .18rem;
   left: 0;
   right: 0;
   margin: auto;
-  top: 5.3vw;
+  top: 3.3vw;
   background-color: #7847df;
 }
 
-div#sobre {
+div#about {
   display: flex;
   flex-direction: column;
   height: 40vw;
@@ -112,35 +115,35 @@ div#sobre {
   font-size: 2vw;
 }
 
-div#sobre div#eu {
+div#about div#about_container {
   margin: 20px auto;
   width: 70vw;
   max-width: 75vw;
 }
 
-div#sobre div#eu p {
+div#about div#about_container p {
   margin: 3em 0 0 0;
   color: #dee0e1;
 }
 
-div#what-i-do {
+div#services {
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
   margin: 30px 0 30px 0;
-  height: 50vw;
+  height: 40vw;
   width: 100%;
 }
 
-div#what-i-do div#what-does {
+div#services div#services_container {
   display: flex;
   justify-content: space-evenly;
-  margin: 10vw 0 0 0;
+  margin: auto 0;
   width: 80vw;
 }
 
-div#what-i-do div#what-does div {
+div#services div#services_container div {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -151,31 +154,31 @@ div#what-i-do div#what-does div {
   border-radius: 5px;
 }
 
-div#what-i-do div#what-does div:nth-child(1) img {
+div#services div#services_container div:nth-child(1) img {
   height: 7vw;
-  margin: 20px 0;
+  margin: 2vw 0 2vw 0;
 }
 
-div#what-i-do div#what-does div img {
+div#services div#services_container div img {
   height: 11vw;
 }
 
-div#what-i-do div#what-does div h3 {
-  font-size: 2vw;
+div#services div#services_container div h3 {
+  font-size: 2.3vw;
   color: #dee0e1;
   white-space: nowrap;
 }
 
-div#what-i-do div#what-does div p {
+div#services div#services_container div p {
   margin: 10px 0;
-  max-width: 180px;
+  max-width: 15vw;
   text-align: center;
   text-shadow: none;
   color: #dee0e1;
-  font-size: .8em;
+  font-size: 1vw;
 }
 
-div#projetos {
+div#projects {
   display: inline-block;
   background-color: #33415f;
   text-align: center;
@@ -184,7 +187,7 @@ div#projetos {
   width: 100%;
 }
 
-div#Lista-de-projetos {
+div#projects div#projects_container {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -194,34 +197,37 @@ div#Lista-de-projetos {
   padding: 15px 0 0 0;
 }
 
-div#Lista-de-projetos div {
+div#projects div#projects_container div {
   display: flex;
   border: 2px solid black;
   border-radius: 5px;
   background-color: #232829;
-  width: 20em;
-  padding: 15px 0 10px 0;
+  width: 23em;
+  padding: 20px 0 35px 0;
   margin: 40px 30px 30px 30px;
   align-items: center;
   flex-direction: column;
 }
 
-div#Lista-de-projetos div img {
-  height: 25vw;
-  max-height: 10rem;
+div#projects div#projects_container div img {
+  height: 40vw;
+  max-height: 11rem;
   width: 90%;
   margin: 0 0 .5em 0;
 }
 
-div#Lista-de-projetos div p {
+div#projects div#projects_container div p {
   font-size: 12px;
   color: #dee0e1;
   width: 85%;
   margin: 10px 0;
 }
 
+div#projects div#projects_container div a {
+  height: 30px;
+}
 
-div#Lista-de-projetos div a button {
+div#projects div#projects_container div a button{
   color: #dee0e1;
   border: none;
   background-color: #7847df;
@@ -242,52 +248,52 @@ footer {
   bottom: 0;
 }
 
-div#contato div#informacao-contato {
+footer div#contact div#contact_container {
   margin: 6vw 0;
 }
 
-div#contato div#informacao-contato ul {
+footer div#contact div#contact_container ul {
   display: flex;
   list-style: none;
   color: #dee0e1;
   margin: 10px 0;
 }
 
-div#contato div#informacao-contato ul .li-img {
+footer div#contact div#contact_container ul .icon {
   display: flex;
   justify-content: center;
   width: 20px;
   margin: 0 5px;
 }
 
-div#contato div#informacao-contato ul .li-img img {
+footer div#contact div#contact_container ul .icon img {
   display: flex;
   height: 20px;
 }
 
-div#contato div#informacao-contato ul li p {
+footer div#contact div#contact_container ul li p {
   list-style-type: none;
   width: auto;
   color: #dee0e1;
 }
 
-div#contato div#informacao-contato ul li a {
+footer div#contact div#contact_container ul li a {
   color: #dee0e1;
 }
 
 
 @media(max-width: 600px) {
-  nav ul li a {
+  header nav ul li a {
     font-size: 3.5vw;
   }
-  h1 {
+  div#background {
+    height: 120vw;
+  }
+  div#background div#background_content {
+    padding: 40vw 0 0 8%;
+  }
+  div#background div#background_content h1 {
     font-size: 6vw;
-  }
-  div#inicio {
-    height: 140vw;
-  }
-  div#content {
-    margin: -90vw 0 0 8%;
   }
   h2 {
     font-size: 8vw;
@@ -296,58 +302,58 @@ div#contato div#informacao-contato ul li a {
     width: 25vw;
     top: 11vw;
   }
-  div#sobre {
-    height: 140vw;
+  div#about {
+    height: 110vw;
     width: 100%;
     font-size: 6vw;
   }
-  div#sobre div#eu {
+  div#about div#about_container {
     width: 80vw;
     max-width: 85vw;
   }
-  div#sobre div#eu p {
+  div#about div#about_container p {
     margin: 1.5em 0 0 0;
   }
-  div#what-i-do {
-    height: 120vw;
+  div#services {
+    height: 110vw;
     width: 100%;
   }
-  div#what-i-do div#what-does {
+  div#services div#services_container {
     margin: 40px 0 0 0;
   }
-  div#what-i-do div#what-does div {
+  div#services div#services_container div {
     padding: 10vw 4vw;
-    min-width: 47vw;
+    min-width: 45vw;
   }
-  div#what-i-do div#what-does div:nth-child(1) img {
+  div#services div#services_container div:nth-child(1) img {
     height: 13vw;
     margin: 7px 0 20px 0;
   }
-  div#what-i-do div#what-does div img {
+  div#services div#services_container div img {
     height: 19vw;
     margin: 0 0 5px 0;
   }
-  div#what-i-do div#what-does div h3 {
-    font-size: 5vw;
+  div#services div#services_container div h3 {
+    font-size: 4vw;
   }
-  div#what-i-do div#what-does div p {
+  div#services div#services_container div p {
     font-size: 3vw;
-    max-width: 140px;
+    max-width: 150px;
   }
-  div#Lista-de-projetos {
+  div#projects_container {
     padding: 25px 0 0 0;
   }
-  div#Lista-de-projetos div {
+  div#projects_container div {
     width: 90%;
     margin: 10px 0;
   }
-  div#Lista-de-projetos div img {
+  div#projects_container div img {
     height: 35vw;
   }
   footer {
     padding: 1rem 0 0 0;
   }
-  div#contato div#informacao-contato {
+  footer div#contact div#contact_container {
     margin: 15vw 0;
   }
 }

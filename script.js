@@ -1,4 +1,4 @@
-document.querySelector("#inicio").style.backgroundSize = "100% 100%";
+document.querySelector("#background").style.backgroundSize = "100% 100%";
 
 const menu_links = document.querySelectorAll('nav a');
 
