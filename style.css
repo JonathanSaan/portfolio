@@ -44,13 +44,13 @@ header nav ul li a:hover {
   color: #7847df;
 }
 
-div#background {
+div#home {
   height: 45vw;
   width: 100%;
   background: url("img/programmer.jpg") no-repeat;
 }
 
-div#background div#background_content {
+div#home div#background_content {
   position: absolute;
   backdrop-filter: blur(10px);
   height: 47vw;
@@ -58,7 +58,7 @@ div#background div#background_content {
   padding: 17vw 0 0 8%;
 }
 
-div#background div#background_content h1 {
+div#home div#background_content h1 {
   display: inline-block;
   font-size: 3vw;
   text-shadow: 0px 3px 5px #000000;
@@ -66,7 +66,7 @@ div#background div#background_content h1 {
   overflow: hidden;
 }
 
-div#background div#background_content h1#background_content_name {
+div#home div#background_content h1#background_content_name {
   margin: 0 0 0 .6rem;
   color: #7847df;
   width: 0ch;
@@ -309,14 +309,14 @@ footer div#contact div#contact_container ul li a {
   header nav ul li a {
     font-size: 3.5vw;
   }
-  div#background {
+  div#home {
     height: 120vw;
   }
-  div#background div#background_content {
+  div#home div#background_content {
     height: 122vw;
     padding: 40vw 0 0 8%;
   }
-  div#background div#background_content h1 {
+  div#home div#background_content h1 {
     font-size: 6vw;
   }
   h2 {
