@@ -39,6 +39,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
+  transition: all 300ms ease 0s;
   color: #7847df;
 }
 
@@ -109,7 +110,7 @@ div#about {
   flex-direction: column;
   height: 40vw;
   width: 100%;
-  background-color: #232829;
+  background-color: #131819;
   padding: 30px 0 30px 0;
   text-align: center;
   font-size: 2vw;
@@ -131,8 +132,10 @@ div#services {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  background-color: #232829;
   margin: 30px 0 30px 0;
   height: 40vw;
+  min-height: 30rem;
   width: 100%;
 }
 
@@ -144,14 +147,21 @@ div#services div#services_container {
 }
 
 div#services div#services_container div {
+  transition: all 1s ease 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-width: 23rem;
   width: 30vw;
   padding: 3vw 4vw;
   margin: 10px;
-  background-color: #232829;
+  background-color: #131819;
+  border: 1px solid #101013;
   border-radius: 5px;
+}
+
+div#services div#services_container div:hover {
+  border: 1px solid #7847df;
 }
 
 div#services div#services_container div:nth-child(1) img {
@@ -164,23 +174,23 @@ div#services div#services_container div img {
 }
 
 div#services div#services_container div h3 {
-  font-size: 2.3vw;
+  font-size: 1.8rem;
   color: #dee0e1;
   white-space: nowrap;
 }
 
 div#services div#services_container div p {
   margin: 10px 0;
-  max-width: 15vw;
+  max-width: 19vw;
   text-align: center;
   text-shadow: none;
   color: #dee0e1;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 div#projects {
   display: inline-block;
-  background-color: #33415f;
+  background-color: #131819;
   text-align: center;
   padding: 15px 0 30px 0;
   height: 100%;
@@ -198,8 +208,9 @@ div#projects div#projects_container {
 }
 
 div#projects div#projects_container div {
+  transition: all 1s ease 0s, opacity 2s cubic-bezier(0.5, 0, 0, 1) 0s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0s;
   display: flex;
-  border: 2px solid black;
+  border: 1px solid #101013;
   border-radius: 5px;
   background-color: #232829;
   width: 23em;
@@ -208,6 +219,11 @@ div#projects div#projects_container div {
   align-items: center;
   flex-direction: column;
 }
+
+div#projects div#projects_container div:hover {
+  border: 1px solid #7847df;
+}
+
 
 div#projects div#projects_container div img {
   height: 40vw;
@@ -236,6 +252,11 @@ div#projects div#projects_container div a button{
   padding: 7px;
   margin: 10px 0;
   border-radius: 4px;
+}
+
+div#projects div#projects_container div a button:hover {
+  transition: all 300ms ease 0s;
+  filter: brightness(.9);
 }
 
 footer {
@@ -282,7 +303,7 @@ footer div#contact div#contact_container ul li a {
 }
 
 
-@media(max-width: 600px) {
+@media(max-width: 786px) {
   header nav ul li a {
     font-size: 3.5vw;
   }
@@ -290,6 +311,7 @@ footer div#contact div#contact_container ul li a {
     height: 120vw;
   }
   div#background div#background_content {
+    height: 122vw;
     padding: 40vw 0 0 8%;
   }
   div#background div#background_content h1 {
@@ -315,7 +337,7 @@ footer div#contact div#contact_container ul li a {
     margin: 1.5em 0 0 0;
   }
   div#services {
-    height: 110vw;
+    height: 100vw;
     width: 100%;
   }
   div#services div#services_container {
@@ -323,21 +345,22 @@ footer div#contact div#contact_container ul li a {
   }
   div#services div#services_container div {
     padding: 10vw 4vw;
-    min-width: 45vw;
+    width: 40vw;
+    min-width: 16rem;
   }
   div#services div#services_container div:nth-child(1) img {
     height: 13vw;
-    margin: 7px 0 20px 0;
+    margin: 5vw 0 2vw 0; 
   }
   div#services div#services_container div img {
     height: 19vw;
     margin: 0 0 5px 0;
   }
   div#services div#services_container div h3 {
-    font-size: 4vw;
+    font-size: 1rem;
   }
   div#services div#services_container div p {
-    font-size: 3vw;
+    font-size: .7rem;
     max-width: 150px;
   }
   div#projects_container {
