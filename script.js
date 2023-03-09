@@ -1,1 +1,1 @@
-document.querySelector("#start").style.backgroundSize = "100% 100%";
+document.querySelector("#home").style.backgroundSize = "100% 100%";
