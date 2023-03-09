@@ -1,7 +1,5 @@
 document.querySelector("#background").style.backgroundSize = "100% 100%";
 
-const menu_links = document.querySelectorAll('nav a');
-
 function getDistanceFromTheTop(element) {
   const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;
@@ -43,3 +41,4 @@ function smoothScrollTo(endX, endY, duration) {
   },
     1000 / 60);
 }
+*/
