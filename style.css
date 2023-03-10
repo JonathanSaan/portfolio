@@ -16,6 +16,7 @@ header nav {
   display: flex;
   background-color: #00000096;
   position: fixed;
+  padding: 0 1rem 0 0;
   height: 50px;
   width: 100%;
   align-items: center;
@@ -81,7 +82,7 @@ div#home div#background_content h1#background_content_name {
     width: 0ch;
   }
   50% {
-    width: 8ch;
+    width: 7.3ch;
   }
 }
 
