@@ -68,22 +68,10 @@ div#home div#background_content h1 {
 }
 
 div#home div#background_content h1#background_content_name {
-  margin: 0 0 0 .6rem;
+  margin: 0 0 0 1.1vw;
   color: #7847df;
-  width: 0ch;
   overflow: hidden;
   white-space: nowrap;
-  animation: text 5s steps(8) infinite;
-  border-right: 3px solid black;
-}
-
-@keyframes text {
-  0% {
-    width: 0ch;
-  }
-  50% {
-    width: 7.3ch;
-  }
 }
 
 h2 {
