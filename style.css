@@ -184,7 +184,7 @@ div#projects {
   display: inline-block;
   background-color: #131819;
   text-align: center;
-  padding: 15px 0 30px 0;
+  padding: 0 0 50px 0;
   height: 100%;
   width: 100%;
 }
@@ -195,7 +195,7 @@ div#projects div#projects_container {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 70rem;
+  /*max-width: 70rem;*/
   padding: 15px 0 0 0;
 }
 
