@@ -195,7 +195,7 @@ div#projects div#projects_container {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  /*max-width: 70rem;*/
+  max-width: 70rem;
   padding: 15px 0 0 0;
 }
 
