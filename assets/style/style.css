@@ -48,7 +48,7 @@ header nav ul li a:hover {
 div#home {
   height: 45vw;
   width: 100%;
-  background: url("img/programmer.jpg") no-repeat;
+  background: url("../image/programmer.jpg") no-repeat;
 }
 
 div#home div#background_content {
