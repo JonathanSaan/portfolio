@@ -1,2 +1,2 @@
 ## Portfolio
-https://jonathansaan.github.io/portifolio/
+https://jonathansaan.github.io/portfolio/
