@@ -118,14 +118,15 @@ div#about div#about_container p {
 }
 
 div#services {
+  scroll-padding-top: 90rem;
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
   background-color: #232829;
-  padding: 2rem 0 0 0;
+  padding: 1rem 0 1rem 0;
   margin: 30px 0 30px 0;
-  height: 40vw;
+  height: 35vw;
   min-height: 30rem;
   width: 100%;
 }
@@ -133,7 +134,6 @@ div#services {
 div#services div#services_container {
   display: flex;
   justify-content: space-evenly;
-  margin: auto 0;
   width: 80vw;
 }
 
@@ -142,11 +142,14 @@ div#services div#services_container div {
     transform 2s cubic-bezier(.5, 0, 0, 1) 0s;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-direction: column;
-  min-width: 23rem;
-  width: 30vw;
-  padding: 3vw 4vw;
-  margin: 10px;
+  padding: 4rem 0;
+  margin: 45px 10px 10px 10px;
+  min-height: 20rem;
+  height: 20vw;
+  min-width: 17.5rem;
+  width: 29vw;
   background-color: #131819;
   border: 1px solid #101013;
   border-radius: 5px;
@@ -156,28 +159,22 @@ div#services div#services_container div:hover {
   border: 1px solid #7847df;
 }
 
-div#services div#services_container div:nth-child(1) img {
-  height: 7vw;
-  margin: 2vw 0 2vw 0;
-}
-
 div#services div#services_container div img {
-  height: 11vw;
+  height: 7vw;
 }
 
 div#services div#services_container div h3 {
-  font-size: 1.8rem;
+  font-size: 1.4vw;
   color: #dee0e1;
   white-space: nowrap;
 }
 
 div#services div#services_container div p {
-  margin: 10px 0;
   max-width: 19vw;
   text-align: center;
   text-shadow: none;
   color: #dee0e1;
-  font-size: 1rem;
+  font-size: .9vw;
 }
 
 div#projects {
@@ -333,27 +330,23 @@ footer div#contact div#contact_container ul li a {
     width: 100%;
   }
   div#services div#services_container {
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
     flex-wrap: wrap;
   }
   div#services div#services_container div {
+  	padding: 4.5rem 0;
     height: 23rem;
-    width: 15em;
-  }
-  div#services div#services_container div:nth-child(1) img {
-    height: 20vw;
-    margin: 5vw 0 2vw 0;
+    min-width: 25rem;
   }
   div#services div#services_container div img {
-    height: 28vw;
-    margin: 0 0 5px 0;
+    height: 25vw;
   }
   div#services div#services_container div h3 {
-    font-size: 1.8rem;
+    font-size: 5vw;
   }
   div#services div#services_container div p {
-    font-size: 1rem;
-    max-width: 350px;
+    font-size: 3.1vw;
+    max-width: 70%;
   }
   div#projects_container {
     padding: 25px 0 0 0;
