@@ -15,6 +15,7 @@ body {
 header nav {
   display: flex;
   background-color: #00000096;
+  backdrop-filter: blur(.15rem);
   position: fixed;
   padding: 0 1rem 0 0;
   height: 50px;
@@ -40,18 +41,18 @@ header nav ul li a {
   text-shadow: 5px 5px 9px rgba(0, 0, 0, .6);
 }
 
-header nav ul li a:hover, footer div#contact div#contact_container ul li a:hover {
+header nav ul li a:hover, footer div#connect nav#connect_container ul li a:hover {
   transition: all 300ms ease 0s;
   color: #7847df;
 }
 
-div#home {
+main#home {
   height: 45vw;
   width: 100%;
   background: url("../image/programmer.jpg") no-repeat;
 }
 
-div#home div#background_content {
+main#home div#background_content {
   position: absolute;
   backdrop-filter: blur(10px);
   height: 47vw;
@@ -59,7 +60,7 @@ div#home div#background_content {
   padding: 17vw 0 0 8%;
 }
 
-div#home div#background_content h1 {
+main#home div#background_content h1 {
   display: inline-block;
   font-size: 3vw;
   text-shadow: 0px 3px 5px #000000;
@@ -67,7 +68,7 @@ div#home div#background_content h1 {
   overflow: hidden;
 }
 
-div#home div#background_content h1#background_content_name {
+main#home div#background_content h1#background_content_name {
   margin: 0 0 0 1.1vw;
   color: #7847df;
   overflow: hidden;
@@ -80,20 +81,24 @@ h2 {
   color: #dee0e1;
   text-shadow: 0px 3px 5px #000000;
   margin: 1rem 0 5px 0;
+  padding: 0 0 .5rem 0;
+  width: auto;
   text-align: center;
 }
+
 
 h2::after {
   position: absolute;
   content: "";
-  width: 7vw;
-  height: .18rem;
+  border-bottom: 3px solid #7847df;
   left: 0;
   right: 0;
+  text-align: center;
   margin: auto;
+  width: 25vh;
   top: 3.3vw;
-  background-color: #7847df;
 }
+
 
 div#about {
   display: flex;
@@ -215,6 +220,7 @@ div#projects div#projects_container div:hover {
 }
 
 div#projects div#projects_container div img {
+  color: transparent;
   height: 40vw;
   max-height: 11rem;
   width: 90%;
@@ -236,6 +242,7 @@ div#projects div#projects_container div a button {
   color: #dee0e1;
   border: none;
   background-color: #7847df;
+  font-size: inherit;
   cursor: pointer;
   height: 30px;
   padding: 7px;
@@ -248,46 +255,115 @@ div#projects div#projects_container div a button:hover {
   filter: brightness(.9);
 }
 
+section {
+  background-color: #232829;
+  padding: 1rem 0;
+}
+
+#form {
+  margin: 3rem auto;
+  width: 100%;
+  max-width: 32rem;
+  font-size: 1.125rem;
+}
+
+#form label,
+#form input,
+#form textarea,
+#form button {
+  display: block;
+  width: 100%;
+}
+
+#form label {
+  color: #dee0e1;
+  line-height: 1;
+  margin-bottom: .5rem;
+}
+
+#form input,
+#form textarea {
+  font-size: inherit;
+  outline: none;
+  padding: .8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow .2s;
+}
+
+#form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+#form input:hover,
+#form input:focus,
+#form textarea:hover,
+#form textarea:focus {
+  border-color: #7847df;
+}
+
+#form button {
+  display: block;
+  padding: 1rem;
+  background-color: #7847df;
+  color: #dee0e1;
+  font-size: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+#form button:hover,
+#form button:focus {
+  outline: none;
+  filter: brightness(.9);
+}
+
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: center;
-  background-color: #232829;
+  background-color: #131819;
   padding: 1rem 0 2rem 0;
   bottom: 0;
 }
 
-footer div#contact div#contact_container {
-  margin: 3rem 0 0 0;
+footer div#connect nav#connect_container {
+  margin: 4rem 0 3rem 0;
 }
 
-footer div#contact div#contact_container ul {
+footer div#connect nav#connect_container ul {
   display: flex;
   list-style: none;
   color: #dee0e1;
   margin: 10px 0;
 }
 
-footer div#contact div#contact_container ul .icon {
+footer div#connect nav#connect_container ul .icon {
   display: flex;
   justify-content: center;
   width: 20px;
   margin: 0 5px;
 }
 
-footer div#contact div#contact_container ul .icon img {
+footer div#connect nav#connect_container ul .icon img {
   display: flex;
+  margin: 0 .3rem 0 0;
   height: 20px;
 }
 
-footer div#contact div#contact_container ul li p {
+footer div#connect nav#connect_container ul li p {
   list-style-type: none;
   width: auto;
   color: #dee0e1;
 }
 
-footer div#contact div#contact_container ul li a {
+footer div#connect nav#connect_container ul li a {
   color: #dee0e1;
 }
 
@@ -295,14 +371,14 @@ footer div#contact div#contact_container ul li a {
   header nav ul li a {
     font-size: 3.5vw;
   }
-  div#home {
+  main#home {
     height: 120vw;
   }
-  div#home div#background_content {
+  main#home div#background_content {
     height: 122vw;
     padding: 40vw 0 0 8%;
   }
-  div#home div#background_content h1 {
+  main#home div#background_content h1 {
     font-size: 6vw;
   }
   h2 {
@@ -336,7 +412,7 @@ footer div#contact div#contact_container ul li a {
   div#services div#services_container div {
   	padding: 4.5rem 0;
     height: 23rem;
-    min-width: 25rem;
+    min-width: 20rem;
   }
   div#services div#services_container div img {
     height: 25vw;
@@ -358,10 +434,13 @@ footer div#contact div#contact_container ul li a {
   div#projects_container div img {
     height: 35vw;
   }
+  #form {
+    width: 90%;
+  }
   footer {
     padding: 1rem 0 0 0;
   }
-  footer div#contact div#contact_container {
+  footer div#connect nav#connect_container {
     margin: 15vw 0;
   }
 }

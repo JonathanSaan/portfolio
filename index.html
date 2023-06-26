@@ -20,17 +20,18 @@
           <li><a href="#services">Service</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#connect">Connect</a></li>
         </ul>
       </nav>
     </header>
-    <div id="home">
+    <main id="home">
       <div id="background_content">
         <h1>Hello, I am</h1>
         <h1 id="background_content_name" translate="no">Jonathan</h1>
         <br />
         <h1>and I am a web developer.</h1>
       </div>
-    </div>
+    </main>
     <div id="about">
       <h2>About me</h2>
       <div id="about_container">
@@ -101,10 +102,28 @@
         </div>
       </div>
     </div>
+    <section id="contact">
+      <h2>Contact me</h2>
+      <form action="https://formsubmit.co/jonathansaandev@email.com" method="POST" id="form">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" required />
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required />
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" required></textarea>
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://yourdomain.co/thanks.html"
+        />
+        <button type="submit">Enviar</button>
+      </form> 
+    </section>
     <footer>
-      <div id="contact">
-        <h2>Contact</h2>
-        <div id="contact_container">
+      <div id="connect">
+        <h2>Connect</h2>
+        <nav id="connect_container">
           <ul>
             <li class="icon">
               <img src="assets/image/email.png" alt="email" loading="lazy" />
@@ -135,7 +154,7 @@
               <a target="_blank" href="https://www.instagram.com/jonathansaandev/?hl=pt-br">Jonathansaandev</a>
             </li>
           </ul>
-        </div>
+        </mav>
       </div>
     </footer>
   </body>
