@@ -58,6 +58,7 @@ header nav .hamburger .bar {
   width: 2rem;
   border-radius: 2px;
   background-color: #dee0e1;
+  transition: transform 0.3s ease;
 }
 main#home {
   height: 45vw;
@@ -410,14 +411,14 @@ footer div#connect nav#connect_container ul li a {
   header nav .hamburger {
     display: block;
   }
-  header nav .hamburguer.active .bar:nth-child(2) {
+  header nav .hamburger.active .bar:nth-child(1) {
+    transform: translateY(.75rem) rotate(45deg);
+  }
+  header nav .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-  header nav .hamburguer.active .bar:nth-child(1) {
-    transform: translateY(1rem) rotate(45deg);
-  }
-  header nav .hamburguer.active .bar:nth-child(3) {
-	transform: translateY(-1rem) rotate(-45deg);
+  header nav .hamburger.active .bar:nth-child(3) {
+	transform: translateY(-.75rem) rotate(-45deg);
   }
   main#home {
     height: 120vw;
