@@ -109,7 +109,7 @@
     </div>
     <section id="contact">
       <h2>Contact me</h2>
-      <form action="https://formsubmit.co/jonathansaandev@gmail.com" method="POST" id="form">
+      <form action="https://formsubmit.co/jonathansaandev@gmail.com" method="POST" onsubmit="submitForm()" id="form">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" required />
         <label for="email">E-mail</label>
@@ -117,6 +117,7 @@
         <label for="message">Message</label>
         <textarea name="message" id="message" required></textarea>
         <button type="submit">Send</button>
+        <input type="hidden" name="_captcha" value="false">
       </form> 
     </section>
     <footer>
