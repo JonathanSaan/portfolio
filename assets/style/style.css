@@ -557,13 +557,15 @@ footer#connect nav#connect_container ul li a {
   }
   div#services div#services_container {
     margin: 20px 0 0 0;
+    width: 100%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   div#services div#services_container div {
+    margin: 10px 0;
   	padding: 4.5rem 0;
     height: 23rem;
-    min-width: 20rem;
+    width: 90%;
   }
   div#services div#services_container div img {
     height: 25vw;
@@ -575,15 +577,15 @@ footer#connect nav#connect_container ul li a {
     font-size: 3.1vw;
     max-width: 70%;
   }
-  div#projects_container {
+  div#projects div#projects_container {
     padding: 25px 0 0 0;
   }
-  div#projects_container div {
+  div#projects div#projects_container div {
     width: 90%;
     margin: 10px 0;
   }
-  div#projects_container div img {
-    height: 35vw;
+  div#projects div#projects_container div img {
+    height: 45vw;
   }
   #form {
     width: 90%;
