@@ -403,8 +403,11 @@ footer {
   font-size: inherit;
   outline: none;
   padding: .8rem;
-  margin-bottom: 1rem;
-  border: 1px solid transparent;
+  margin: 0 0 1rem 0;
+  border: 1px solid #131819;
+  background-color: #131819;
+  caret-color: #7847df;
+  color: #dee0e1;
   border-radius: 8px;
   -webkit-transition: border-color, -webkit-box-shadow .2s;
   transition: border-color, -webkit-box-shadow .2s;
@@ -422,7 +425,7 @@ footer {
 #form input:focus,
 #form textarea:hover,
 #form textarea:focus {
-  border-color: #7847df;
+  border: 1px solid #7847df;
 }
 
 #form button {
