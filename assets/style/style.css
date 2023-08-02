@@ -86,7 +86,7 @@ main#home div#background_content {
   position: absolute;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  height: 45vw;
+  height: 44vw;
   width: 100%;
   padding: 15vw 0 0 8%;
 }
@@ -158,19 +158,18 @@ div#about {
   height: 35vw;
   width: 100%;
   background-color: #131819;
-  padding: 30px 0 30px 0;
+  padding: 30px 0;
   text-align: center;
   font-size: 1.7vw;
 }
 
 div#about div#about_container {
-  margin: 20px auto;
+  margin: auto;
   width: 70vw;
   max-width: 75vw;
 }
 
 div#about div#about_container p {
-  margin: 3em 0 0 0;
   color: #dee0e1;
 }
 
@@ -188,10 +187,10 @@ div#services {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #232829;
-  padding: 1rem 0 1rem 0;
-  margin: 30px 0 30px 0;
-  height: 35vw;
-  min-height: 30rem;
+  padding: 1rem 0;
+  margin: 30px 0;
+  height: 33vw;
+  min-height: 32rem;
   width: 100%;
 }
 
