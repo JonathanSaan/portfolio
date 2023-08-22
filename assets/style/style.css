@@ -138,7 +138,7 @@ main#home div#background_content h1#background_content_name {
 }
 
 h2 {
-  font-size: 2vw;
+  font-size: 3rem;
   color: #dee0e1;
   text-shadow: 0px 3px 5px #000000;
   border-bottom: 3px solid #7847df;
@@ -228,17 +228,17 @@ div#services div#services_container div {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 4rem 1.5rem;
-  margin: 45px 10px 10px 10px;
+  padding: 3rem 5rem;
+  margin: 3.5vw 10px;
   min-height: 20rem;
-  height: 22vw;
-  min-width: 17.5rem;
-  width: 23vw;
+  height: 18vw;
+  min-width: 21rem;
+  width: 20vw;
   background-color: #131819;
   border: 1px solid #101013;
   border-radius: 5px;
   color: #dee0e1;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 div#services div#services_container div:hover {
@@ -246,11 +246,11 @@ div#services div#services_container div:hover {
 }
 
 div#services div#services_container div img {
-  height: 7vw;
+  height: 50%;
 }
 
 div#services div#services_container div h3 {
-  font-size: 1.4vw;
+  font-size: 1.4rem;
   color: #dee0e1;
   white-space: nowrap;
 }
@@ -309,7 +309,10 @@ div#projects div#projects_container div {
   border: 1px solid #101013;
   border-radius: 5px;
   background-color: #232829;
-  width: 23em;
+  min-height: 20rem;
+  height: 17vw;
+  min-width: 17.5rem;
+  width: 20vw;
   padding: 20px 0 35px 0;
   margin: 40px 30px 30px 30px;
   -webkit-box-align: center;
@@ -327,8 +330,7 @@ div#projects div#projects_container div:hover {
 
 div#projects div#projects_container div img {
   color: transparent;
-  height: 40vw;
-  max-height: 11rem;
+  height: 90%;
   width: 90%;
   margin: 0 0 .5em 0;
 }
@@ -350,9 +352,8 @@ div#projects div#projects_container div a button {
   background-color: #7847df;
   font-size: inherit;
   cursor: pointer;
-  height: 30px;
-  padding: 7px;
-  margin: 10px 0;
+  padding: .7rem 20px;
+  margin: .5rem 0;
   border-radius: 4px;
 }
 
@@ -362,6 +363,10 @@ div#projects div#projects_container div a button:hover {
   transition: all 300ms ease 0s;
   -webkit-filter: brightness(.9);
   filter: brightness(.9);
+}
+div#projects div#projects_container div a button:active {
+  -webkit-filter: brightness(.7);
+  filter: brightness(.7);
 }
 
 footer {
@@ -538,7 +543,7 @@ footer {
   }
   div#services div#services_container div {
     margin: 10px 0;
-  	padding: 4.5rem 0;
+  	padding: 4rem 0;
     min-height: 23rem;
     height: auto;
     min-width: 0;
@@ -558,8 +563,9 @@ footer {
     padding: 25px 0 0 0;
   }
   div#projects div#projects_container div {
-    width: 90%;
     margin: 10px 0;
+    height: auto;
+    width: 90%;
   }
   div#projects div#projects_container div img {
     height: 45vw;
