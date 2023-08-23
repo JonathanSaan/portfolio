@@ -288,7 +288,7 @@ div#projects div#projects_container {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 70rem;
+  max-width: 60%;
   padding: 15px 0 0 0;
 }
 
