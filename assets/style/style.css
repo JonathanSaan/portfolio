@@ -228,7 +228,7 @@ div#services div#services_container div {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   margin: 3.5vw 10px;
   min-height: 20rem;
   height: 18vw;
@@ -246,7 +246,7 @@ div#services div#services_container div:hover {
 }
 
 div#services div#services_container div img {
-  height: 50%;
+  height: 45%;
 }
 
 div#services div#services_container div h3 {
