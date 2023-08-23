@@ -228,11 +228,11 @@ div#services div#services_container div {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 3rem 5rem;
+  padding: 3rem 1rem;
   margin: 3.5vw 10px;
   min-height: 20rem;
   height: 18vw;
-  min-width: 21rem;
+  min-width: 18rem;
   width: 20vw;
   background-color: #131819;
   border: 1px solid #101013;
@@ -311,7 +311,7 @@ div#projects div#projects_container div {
   background-color: #232829;
   min-height: 20rem;
   height: 17vw;
-  min-width: 17.5rem;
+  min-width: 20rem;
   width: 20vw;
   padding: 20px 0 35px 0;
   margin: 40px 30px 30px 30px;
@@ -460,7 +460,7 @@ footer {
     padding: 0 .5rem 0 0;
   }
   header nav .menu {
- 	background-color: #00000096;
+ 	  background-color: #00000096;
   	-webkit-backdrop-filter: blur(.15rem);
   	backdrop-filter: blur(.15rem);
   	text-align: center;
@@ -497,9 +497,9 @@ footer {
     opacity: 0;
   }
   header nav .hamburger.active .bar:nth-child(3) {
-	-webkit-transform: translateY(-.75rem) rotate(-45deg);
-	-ms-transform: translateY(-.75rem) rotate(-45deg);
-	transform: translateY(-.75rem) rotate(-45deg);
+    -webkit-transform: translateY(-.75rem) rotate(-45deg);
+    -ms-transform: translateY(-.75rem) rotate(-45deg);
+    transform: translateY(-.75rem) rotate(-45deg);
   }
   main#home {
     height: 120vw;
