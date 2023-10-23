@@ -187,10 +187,9 @@ div#services {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #232829;
-  padding: 1rem 0;
+  padding: 1rem 0 2rem 0;
   margin: 30px 0;
-  height: 33vw;
-  min-height: 32rem;
+  height: 100%;
   width: 100%;
 }
 
@@ -198,10 +197,17 @@ div#services div#services_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  width: 80vw;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 60%;
 }
 
 div#services div#services_container div {
@@ -228,8 +234,8 @@ div#services div#services_container div {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 2rem 1rem;
-  margin: 3.5vw 10px;
+  padding: 3vw 1rem;
+  margin: 3rem 2rem;
   min-height: 20rem;
   height: 18vw;
   min-width: 18rem;
@@ -269,7 +275,7 @@ div#projects {
   flex-direction: column;
   background-color: #131819;
   text-align: center;
-  padding: 0 0 50px 0;
+  padding: 0 0 2rem 0;
   height: 100%;
   width: 100%;
 }
@@ -314,7 +320,7 @@ div#projects div#projects_container div {
   min-width: 20rem;
   width: 20vw;
   padding: 20px 0 35px 0;
-  margin: 40px 30px 30px 30px;
+  margin: 3rem 2rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -537,16 +543,15 @@ footer {
   }
   div#services div#services_container {
     margin: 20px 0 0 0;
-    width: 100%;
+    max-width: 90%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   div#services div#services_container div {
     margin: 10px 0;
-  	padding: 4rem 0;
+  	padding: 8vw 0;
     min-height: 23rem;
-    height: auto;
-    min-width: 0;
+    height: 70vw;
     width: 90%;
   }
   div#services div#services_container div img {
@@ -561,6 +566,7 @@ footer {
   }
   div#projects div#projects_container {
     padding: 25px 0 0 0;
+    max-width: 90%;
   }
   div#projects div#projects_container div {
     margin: 10px 0;
