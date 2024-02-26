@@ -155,22 +155,34 @@ div#about {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 35vw;
+  min-height: 31rem;
+  height: 33vw;
   width: 100%;
   background-color: #131819;
   padding: 30px 0;
-  text-align: center;
-  font-size: 1.7vw;
+  font-size: 1.4vw;
 }
 
 div#about div#about_container {
+  display: flex;
   margin: auto;
+  justify-content: space-evenly;
   width: 70vw;
   max-width: 75vw;
 }
 
+div#about div#about_container img#about_containerImage {
+  border-radius: 100%;
+  border: .3rem solid #7847df;
+  padding: .8rem;
+  height: 20vw;
+  min-height: 13rem;
+}
+
 div#about div#about_container p {
+  margin: auto 0;
   color: #dee0e1;
+  width: 35vw;
 }
 
 div#services {
@@ -525,16 +537,23 @@ footer {
     top: 11vw;
   }
   div#about {
-    height: 145vw;
+    height: 220vw;
     width: 100%;
     font-size: 6vw;
   }
   div#about div#about_container {
+    justify-content: center;
+    padding: 1rem 0 0 0;
     width: 80vw;
+    flex-direction: column;
     max-width: 85vw;
   }
+  div#about div#about_container img#about_containerImage {
+    height: auto;
+  }
   div#about div#about_container p {
-    margin: 1.5em 0 0 0;
+    margin: 4rem 0 0 0;
+    width: 100%;
   }
   div#services {
     height: auto;
