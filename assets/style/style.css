@@ -155,19 +155,19 @@ div#about {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 31rem;
-  height: 33vw;
+  min-height: 33rem;
+  height: 37vw;
   width: 100%;
   background-color: #0F0F0F;
   padding: 30px 0;
-  font-size: 1.4vw;
+  font-size: 1.6vw;
 }
 
 div#about div#about_container {
   display: flex;
   margin: auto;
   justify-content: space-evenly;
-  width: 70vw;
+  width: 78vw;
   max-width: 75vw;
 }
 
@@ -182,7 +182,7 @@ div#about div#about_container img#about_containerImage {
 div#about div#about_container p {
   margin: auto 0;
   color: #dee0e1;
-  width: 35vw;
+  width: 38vw;
 }
 
 div#services {
