@@ -347,7 +347,7 @@ div#projects div#projects_container div:hover {
 
 div#projects div#projects_container div a.linkImage, div#projects div#projects_container div img {
   color: transparent;
-  min-height: 12vw;
+  min-height: 11.5vw;
   height: 100%;
   width: 100%;
 }
