@@ -111,11 +111,17 @@ main#home div#background_content ul .icon {
   margin: 0 .5rem;
 }
 
-main#home div#background_content ul .icon:hover {
+main#home div#background_content ul .icon button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+main#home div#background_content ul .icon a:hover {
   filter: invert(42%) sepia(82%) saturate(6460%) hue-rotate(250deg) brightness(94%) contrast(86%);
 }
 
-main#home div#background_content ul .icon img {
+main#home div#background_content ul .icon button img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
