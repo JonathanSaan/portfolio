@@ -161,7 +161,7 @@ div#about {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 33rem;
+  min-height: 40rem;
   height: 37vw;
   width: 100%;
   background-color: #0F0F0F;
@@ -182,7 +182,9 @@ div#about div#about_container img#about_containerImage {
   border: .3rem solid #7847df;
   padding: .8rem;
   height: 20vw;
-  min-height: 13rem;
+  min-height: 23rem;
+  width: 20vw;
+  min-width: 23rem;
 }
 
 div#about div#about_container p {
@@ -211,7 +213,7 @@ div#services {
   width: 100%;
 }
 
-div#services div#services_container {
+div#services ul#services_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,7 +230,7 @@ div#services div#services_container {
   max-width: 60%;
 }
 
-div#services div#services_container div {
+div#services ul#services_container li {
   -webkit-transition: all 1s ease 0s, opacity 2s cubic-bezier(.5, 0, 0, 1) 0s,
     -webkit-transform 2s cubic-bezier(.5, 0, 0, 1) 0s;
   transition: all 1s ease 0s, opacity 2s cubic-bezier(.5, 0, 0, 1) 0s,
@@ -265,15 +267,15 @@ div#services div#services_container div {
   font-size: 1rem;
 }
 
-div#services div#services_container div:hover {
+div#services ul#services_container li:hover {
   border: 1px solid #7847df;
 }
 
-div#services div#services_container div img {
+div#services ul#services_container li img {
   height: 45%;
 }
 
-div#services div#services_container div h3 {
+div#services ul#services_container li h3 {
   font-size: 1.4rem;
   color: #dee0e1;
   white-space: nowrap;
@@ -298,7 +300,7 @@ div#projects {
   width: 100%;
 }
 
-div#projects div#projects_container {
+div#projects ul#projects_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,7 +318,7 @@ div#projects div#projects_container {
   padding: 15px 0 0 0;
 }
 
-div#projects div#projects_container div {
+div#projects ul#projects_container li {
   -webkit-transition: all 1s ease 0s, opacity 2s cubic-bezier(.5, 0, 0, 1) 0s,
     -webkit-transform 2s cubic-bezier(.5, 0, 0, 1) 0s;
   transition: all 1s ease 0s, opacity 2s cubic-bezier(.5, 0, 0, 1) 0s,
@@ -347,25 +349,25 @@ div#projects div#projects_container div {
   flex-direction: column;
 }
 
-div#projects div#projects_container div:hover {
+div#projects ul#projects_container li:hover {
   border: 1px solid #7847df;
 }
 
-div#projects div#projects_container div a.linkImage, div#projects div#projects_container div img {
+div#projects ul#projects_container li a.linkImage, div#projects ul#projects_container li img {
   color: transparent;
   min-height: 10.5vw;
   height: 100%;
   width: 100%;
 }
 
-div#projects div#projects_container div p {
+div#projects ul#projects_container li p {
   font-size: 12px;
   color: #dee0e1;
   width: 85%;
   margin: 1rem 0;
 }
 
-div#projects div#projects_container div a button {
+div#projects ul#projects_container li a button {
   color: #dee0e1;
   border: none;
   background-color: #7847df;
@@ -376,14 +378,14 @@ div#projects div#projects_container div a button {
   border-radius: 4px;
 }
 
-div#projects div#projects_container div a button:hover {
+div#projects ul#projects_container li a button:hover {
   -webkit-transition: all 300ms ease 0s;
   -o-transition: all 300ms ease 0s;
   transition: all 300ms ease 0s;
   -webkit-filter: brightness(.9);
   filter: brightness(.9);
 }
-div#projects div#projects_container div a button:active {
+div#projects ul#projects_container li a button:active {
   -webkit-filter: brightness(.7);
   filter: brightness(.7);
 }
@@ -551,6 +553,7 @@ footer {
   }
   div#about div#about_container img#about_containerImage {
     height: auto;
+    width: auto;
   }
   div#about div#about_container p {
     margin: 4rem 0 0 0;
@@ -561,39 +564,39 @@ footer {
     padding: 0 0 3rem 0;
     width: 100%;
   }
-  div#services div#services_container {
+  div#services ul#services_container {
     margin: 20px 0 0 0;
     max-width: 90%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  div#services div#services_container div {
+  div#services ul#services_container li {
     margin: 10px 0;
   	padding: 8vw 0;
     min-height: 23rem;
     height: 70vw;
     width: 90%;
   }
-  div#services div#services_container div img {
+  div#services ul#services_container li img {
     height: 25vw;
   }
-  div#services div#services_container div h3 {
+  div#services ul#services_container li h3 {
     font-size: 5vw;
   }
-  div#services div#services_container div p {
+  div#services ul#services_container li p {
     font-size: 3.1vw;
     max-width: 70%;
   }
-  div#projects div#projects_container {
+  div#projects ul#projects_container {
     padding: 25px 0 0 0;
     max-width: 90%;
   }
-  div#projects div#projects_container div {
+  div#projects ul#projects_container li {
     margin: 10px 0;
     height: auto;
     width: 90%;
   }
-  div#projects div#projects_container div img {
+  div#projects ul#projects_container li img {
     height: 45vw;
   }
   #form {
