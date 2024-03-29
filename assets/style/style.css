@@ -76,13 +76,13 @@ header nav .hamburger .bar {
   transition: transform .3s ease;
   transition: transform .3s ease, -webkit-transform .3s ease;
 }
-main#home {
+div#home {
   height: 42vw;
   width: 100%;
   background: url("../image/programmer.jpg") no-repeat;
 }
 
-main#home div#background_content {
+div#home div#background_content {
   position: absolute;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -91,7 +91,7 @@ main#home div#background_content {
   padding: 15vw 0 0 8%;
 }
 
-main#home div#background_content ul {
+div#home div#background_content ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,7 +100,7 @@ main#home div#background_content ul {
   margin: 10px 0;
 }
 
-main#home div#background_content ul .icon {
+div#home div#background_content ul .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,24 +111,24 @@ main#home div#background_content ul .icon {
   margin: 0 .5rem;
 }
 
-main#home div#background_content ul .icon button{
+div#home div#background_content ul .icon button{
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-main#home div#background_content ul .icon a:hover {
+div#home div#background_content ul .icon a:hover {
   filter: invert(42%) sepia(82%) saturate(6460%) hue-rotate(250deg) brightness(94%) contrast(86%);
 }
 
-main#home div#background_content ul .icon button img {
+div#home div#background_content ul .icon button img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 2rem;
 }
 
-main#home div#background_content h1 {
+div#home div#background_content h1 {
   display: inline-block;
   font-size: 3vw;
   text-shadow: 0px 3px 5px #000000;
@@ -136,7 +136,7 @@ main#home div#background_content h1 {
   overflow: hidden;
 }
 
-main#home div#background_content h1#background_content_name {
+div#home div#background_content h1#background_content_name {
   margin: 0 0 0 1.1vw;
   color: #7847df;
   overflow: hidden;
@@ -189,7 +189,7 @@ div#about div#about_container img#about_containerImage {
 
 div#about div#about_container p {
   margin: auto 0;
-  color: #dee0e1;
+  color: #8a8a8a;
   width: 38vw;
 }
 
@@ -226,6 +226,7 @@ div#services ul#services_container {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
+  min-width: 50rem;
   max-width: 60%;
 }
 
@@ -257,12 +258,11 @@ div#services ul#services_container li {
   margin: 3rem 2rem;
   min-height: 20rem;
   height: 18vw;
-  min-width: 18rem;
+  min-width: 21rem;
   width: 20vw;
   background-color: #0F0F0F;
   border: 1px solid #0F0F0F;
   border-radius: 5px;
-  color: #dee0e1;
   font-size: 1rem;
 }
 
@@ -278,6 +278,10 @@ div#services ul#services_container li h3 {
   font-size: 1.4rem;
   color: #dee0e1;
   white-space: nowrap;
+}
+
+div#services ul#services_container li p {
+  color: #8a8a8a;
 }
 
 div#projects {
@@ -313,6 +317,7 @@ div#projects ul#projects_container {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
+  min-width: 56rem;
   max-width: 75%;
   padding: 15px 0 0 0;
 }
@@ -389,7 +394,7 @@ div#projects ul#projects_container li a button:active {
   filter: brightness(.7);
 }
 
-footer {
+div#contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +403,7 @@ footer {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #212121;
-  padding: 2rem 0 3rem 0;
+  padding: 3rem 0;
 }
 
 #form {
@@ -431,7 +436,7 @@ footer {
   border: 1px solid #0F0F0F;
   background-color: #0F0F0F;
   caret-color: #7847df;
-  color: #dee0e1;
+  color: #8a8a8a;
   border-radius: 8px;
   -webkit-transition: border-color, -webkit-box-shadow .2s;
   transition: border-color, -webkit-box-shadow .2s;
@@ -474,7 +479,15 @@ footer {
   filter: brightness(.9);
 }
 
-@media (max-width: 786px) {
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  color: #dee0e1;
+}
+
+@media (max-width: 797px) {
   header nav {
     height: 4.5rem;
     padding: 0 .5rem 0 0;
@@ -521,14 +534,14 @@ footer {
     -ms-transform: translateY(-.75rem) rotate(-45deg);
     transform: translateY(-.75rem) rotate(-45deg);
   }
-  main#home {
+  div#home {
     height: 120vw;
   }
-  main#home div#background_content {
+  div#home div#background_content {
     height: 127vw;
     padding: 40vw 0 0 5%;
   }
-  main#home div#background_content h1 {
+  div#home div#background_content h1 {
     font-size: 6vw;
   }
   h2 {
@@ -565,6 +578,7 @@ footer {
   }
   div#services ul#services_container {
     margin: 20px 0 0 0;
+    min-width: 0;
     max-width: 90%;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -588,6 +602,7 @@ footer {
   }
   div#projects ul#projects_container {
     padding: 25px 0 0 0;
+    min-width: 0;
     max-width: 90%;
   }
   div#projects ul#projects_container li {
@@ -596,9 +611,13 @@ footer {
     width: 90%;
   }
   div#projects ul#projects_container li img {
-    height: 45vw;
+    min-height: 12rem;
+    height: 40vw;
   }
   #form {
     width: 90%;
+  }
+  footer {
+    font-size: .8rem;
   }
 }
