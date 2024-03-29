@@ -193,6 +193,49 @@ div#about div#about_container p {
   width: 38vw;
 }
 
+button#to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7847df;
+  position: fixed;
+  bottom: 1rem;
+  right: 2.2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  color: #1f1f1f;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+button#to-top.active {
+  bottom: 2.2rem;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+button#to-top:hover {
+  -webkit-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  transition: all 300ms ease 0s;
+  -webkit-filter: brightness(.9);
+  filter: brightness(.9);
+}
+
+button#to-top:active {
+  -webkit-filter: brightness(.7);
+  filter: brightness(.7);
+}
+
+button#to-top img {
+  height: 1.5rem;
+}
+
 div#services {
   scroll-padding-top: 90rem;
   display: -webkit-box;
