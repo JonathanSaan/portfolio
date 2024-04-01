@@ -83,6 +83,8 @@ div#home {
 }
 
 div#home div#background_content {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -136,8 +138,7 @@ div#home div#background_content h1 {
   overflow: hidden;
 }
 
-div#home div#background_content h1#background_content_name {
-  margin: 0 0 0 1.1vw;
+div#home div#background_content span#background_content-name {
   color: #7847df;
   overflow: hidden;
   white-space: nowrap;
