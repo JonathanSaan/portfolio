@@ -43,36 +43,29 @@
     </header>
     <main>
       <div id="home">
+        <img src="assets/image/programmer.webp" alt="background" />
         <div id="background_content">
           <h1>Hello, I am <span id="background_content-name" translate="no">Jonathan Saan</span></h1>
           <h1>and I am a web developer.</h1>
           <ul>
             <li class="icon">
-              <a target="_blank" href="https://www.linkedin.com/in/jonathan-saan-9a69b5217">
-                <button title="linkedin">
-                  <img src="assets/image/linkedin.png" alt="linkedin" />
-                </button>
+              <a target="_blank" href="https://www.linkedin.com/in/jonathan-saan-9a69b5217" title="LinkedIn">
+                <img src="assets/image/linkedin.png" alt="linkedin" />
               </a>
             </li>
             <li class="icon">
-              <a target="_blank" href="https://github.com/JonathanSaan">
-                <button title="github">
-                  <img src="assets/image/github.png" alt="github" />
-                </button>
+              <a target="_blank" href="https://github.com/JonathanSaan" title="Github">
+                <img src="assets/image/github.png" alt="github" />
               </a>
             </li>
             <li class="icon">
-              <a target="_blank" href="https://discord.com/users/462837339291516933">
-                <button title="discord">
-                  <img src="assets/image/discord.png" alt="discord" />
-                </button>
+              <a target="_blank" href="https://discord.com/users/462837339291516933" title="Discord">
+                <img src="assets/image/discord.png" alt="discord" />
               </a>
             </li>
             <li class="icon">
-              <a target="_blank" href="https://www.instagram.com/jonathansaandev/">
-                <button title="instagram">
-                  <img src="assets/image/instagram.png" alt="instagram" />
-                </button>
+              <a target="_blank" href="https://www.instagram.com/jonathansaandev/" title="Instagram">
+                <img src="assets/image/instagram.png" alt="instagram" />
               </a>
             </li>
           </ul>
@@ -81,7 +74,7 @@
       <div id="about">
         <h2>About me</h2>
         <div id="about_container">
-          <img src="assets/image/me.jpeg" id="about_containerImage" alt="me" loading="lazy" />
+          <img src="assets/image/me.webp" id="about_containerImage" alt="me" loading="lazy" />
           
           <p>
             I'm Jonathan Saan, a skilled website developer with over 3 years of
@@ -92,7 +85,7 @@
         </div>
       </div>
       
-      <a href="#">
+      <a href="#" id="link-to-top">
         <button id="to-top">
           <img src="assets/image/top.png" alt="up arrow" />
         </button>
@@ -136,42 +129,50 @@
         <h2>Projects</h2>
         <ul id="projects_container">
           <li>
-            <a target="_blank" href="https://justmovies.vercel.app/">
-              <img src="assets/image/justmovies.webp" alt="justmovies" loading="lazy" />
-            </a>
+            <button onclick="showPopup('assets/image/justmovies.webp')">
+              <img src="assets/image/justmovies.webp" class="background" alt="justmovies" loading="lazy" />
+              <img src="assets/image/zoom-in.png" class="zoom-in" alt="zoom in" loading="lazy" />
+            </button>
               <p>A website about movies.</p>
             <a target="_blank" href="https://justmovies.vercel.app/">
-              <button type="submit">Access</button>
+              Access
             </a>
           </li>
           <li>
-            <a class="linkImage" target="_blank" href="https://calisaan.vercel.app/">
-              <img src="assets/image/calisaan.webp" alt="calisaan" loading="lazy" />
-            </a>
+            <button onclick="showPopup('assets/image/calisaan.webp')">
+              <img src="assets/image/calisaan.webp" class="background" alt="calisaan" loading="lazy" />
+              <img src="assets/image/zoom-in.png" class="zoom-in" alt="zoom in" loading="lazy" />
+            </button>
             <p>An e-commerce about Calisthenics.</p>
             <a target="_blank" href="https://calisaan.vercel.app/">
-              <button type="submit">Access</button>
+              Access
             </a>
           </li>
           <li>
-            <a class="linkImage" target="_blank" href="https://saanguide.vercel.app/">
-              <img src="assets/image/blogsaan.webp" alt="saanguide" loading="lazy" />
-            </a>
+            <button onclick="showPopup('assets/image/blogsaan.webp')">
+              <img src="assets/image/blogsaan.webp" class="background" alt="saanguide" loading="lazy" />
+              <img src="assets/image/zoom-in.png" class="zoom-in" alt="zoom in" loading="lazy" />
+            </button>
             <p>A blog about stuff guide.</p>
             <a target="_blank" href="https://saanguide.vercel.app/">
-              <button type="submit">Access</button>
+              Access
             </a>
           </li>
           <li>
-            <a class="linkImage" target="_blank" href="https://jonathansaan.github.io/landing-page-diogenes/">
-              <img src="assets/image/diogenes.webp" alt="landing page" loading="lazy" />
-            </a>
+            <button onclick="showPopup('assets/image/diogenes.webp')">
+              <img src="assets/image/diogenes.webp" class="background" alt="landing page" loading="lazy" />
+              <img src="assets/image/zoom-in.png" class="zoom-in" alt="zoom in" loading="lazy" />
+            </button>
             <p>A landing page about Diogenes.</p>
             <a target="_blank" href="https://jonathansaan.github.io/landing-page-diogenes/">
-              <button type="submit">Access</button>
+              Access
             </a>
           </li>
         </ul>
+        <div id="popup" onclick="hidePopup()">
+          <span onclick="hidePopup()">&times;</span>
+          <img id="popupImg" src="" alt="popup image" />
+        </div>
       </div>
       <div id="contact">
         <h2>Contact me</h2>
