@@ -57,7 +57,7 @@ header nav .menu li a {
   transition: all 300ms ease 0s;
 }
 
-header nav .menu li a:hover {
+header nav .menu li a:hover, header nav .menu li a:active {
   color: #7847df;
 }
 
@@ -82,7 +82,7 @@ header nav .hamburger .bar {
 }
 
 div#home img {
-  height: 42vw;
+  height: 42rem;
   width: 100%;
   top: 0;
   left: 0;
@@ -99,11 +99,11 @@ div#home div#background_content {
   position: absolute;
   top: 0;
   left: 0;
-  height: 44vw;
+  height: 44rem;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   width: 100%;
-  padding: 15vw 0 0 8%;
+  padding: 15rem 0 0 8%;
 }
 
 div#home div#background_content ul {
@@ -140,7 +140,7 @@ div#home div#background_content ul .icon a img {
 
 div#home div#background_content h1 {
   display: inline-block;
-  font-size: 3vw;
+  font-size: 3rem;
   text-shadow: 0px 3px 5px #000000;
   color: #dee0e1;
   overflow: hidden;
@@ -182,6 +182,7 @@ div#about div#about_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   margin: auto;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -194,10 +195,12 @@ div#about div#about_container img#about_containerImage {
   border-radius: 100%;
   border: .3rem solid #7847df;
   padding: .8rem;
-  height: 20vw;
-  min-height: 23rem;
-  width: 20vw;
-  min-width: 23rem;
+  height: 33vw;
+  min-height: 10rem;
+  width: 33vw;
+  min-width: 10rem;
+  max-width: 23rem;
+  max-height: 23rem;
 }
 
 div#about div#about_container p {
@@ -298,21 +301,171 @@ div#services ul#services_container {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
-  min-width: 50rem;
-  max-width: 60%;
+  max-width: 70rem;
 }
 
 div#services ul#services_container li {
-  -webkit-transition: all 1s ease 0s, opacity 2s cubic-bezier(.5, 0, 0, 1) 0s,
-    -webkit-transform 2s cubic-bezier(.5, 0, 0, 1) 0s;
-  transition: all 1s ease 0s, opacity 2s cubic-bezier(.5, 0, 0, 1) 0s,
-    -webkit-transform 2s cubic-bezier(.5, 0, 0, 1) 0s;
-  -o-transition: all 1s ease 0s, opacity 2s cubic-bezier(.5, 0, 0, 1) 0s,
-    transform 2s cubic-bezier(.5, 0, 0, 1) 0s;
-  transition: all 1s ease 0s, opacity 2s cubic-bezier(.5, 0, 0, 1) 0s,
-    transform 2s cubic-bezier(.5, 0, 0, 1) 0s;
-  transition: all 1s ease 0s, opacity 2s cubic-bezier(.5, 0, 0, 1) 0s,
-    transform 2s cubic-bezier(.5, 0, 0, 1) 0s, -webkit-transform 2s cubic-bezier(.5, 0, 0, 1) 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 3vw 1rem;
+  margin: 3rem 2rem;
+  min-height: 20rem;
+  height: 18vw;
+  min-width: 20rem;
+  width: 20vw;
+  background-color: #0F0F0F;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+div#services ul#services_container li span {
+  -webkit-transition: .5;
+  -o-transition: .5;
+  transition: .5;
+  position: absolute;
+}
+
+div#services ul#services_container li span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: -o-linear-gradient(left, transparent, #7847df);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#7847df));
+  background: linear-gradient(to right, transparent, #7847df);
+  -webkit-animation: animate1 2s linear infinite;
+          animation: animate1 2s linear infinite;
+}
+
+div#services ul#services_container li span:nth-child(2) {
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: -o-linear-gradient(top, transparent, #7847df);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#7847df));
+  background: linear-gradient(to bottom, transparent, #7847df);
+  -webkit-animation: animate2 2s linear infinite;
+          animation: animate2 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+div#services ul#services_container li span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: -o-linear-gradient(right, transparent, #7847df);
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#7847df));
+  background: linear-gradient(to left, transparent, #7847df);
+  -webkit-animation: animate3 2s linear infinite;
+          animation: animate3 2s linear infinite;
+}
+
+div#services ul#services_container li span:nth-child(4) {
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: -o-linear-gradient(bottom, transparent, #7847df);
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#7847df));
+  background: linear-gradient(to top, transparent, #7847df);
+  -webkit-animation: animate4 2s linear infinite;
+          animation: animate4 2s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+@keyframes animate2 {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+@-webkit-keyframes animate3 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes animate3 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes animate4 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+@keyframes animate4 {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+}
+
+div#services ul#services_container li div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,34 +479,20 @@ div#services ul#services_container li {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 3vw 1rem;
-  margin: 3rem 2rem;
-  min-height: 20rem;
-  height: 18vw;
-  min-width: 21rem;
-  width: 20vw;
-  background-color: #0F0F0F;
-  border: 1px solid #0F0F0F;
-  border-radius: 5px;
-  font-size: 1rem;
 }
 
-div#services ul#services_container li:hover {
-  border: 1px solid #7847df;
-}
-
-div#services ul#services_container li img {
+div#services ul#services_container li div img {
   height: 45%;
   pointer-events: none;
 }
 
-div#services ul#services_container li h3 {
+div#services ul#services_container li div h3 {
   font-size: 1.4rem;
   color: #dee0e1;
   white-space: nowrap;
 }
 
-div#services ul#services_container li p {
+div#services ul#services_container li div p {
   color: #8a8a8a;
 }
 
@@ -390,9 +529,7 @@ div#projects ul#projects_container {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
-  min-width: 56rem;
-  max-width: 75%;
-  padding: 15px 0 0 0;
+  max-width: 70rem;
 }
 
 div#projects ul#projects_container li {
@@ -413,17 +550,17 @@ div#projects ul#projects_container li {
   border-radius: 5px;
   background-color: #212121;
   height: auto;
-  min-width: 24rem;
+  min-width: 20rem;
   width: 24vw;
-  padding: 1.5rem;
   margin: 3rem 2rem;
+  padding: 1.5rem;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 div#projects ul#projects_container li:hover {
@@ -440,8 +577,9 @@ div#projects ul#projects_container li button {
 
 div#projects ul#projects_container li button img.background {
   color: transparent;
-  min-height: 10vw;
-  height: 100%;
+  min-height: 8rem;
+  max-height: 12rem;
+  height: 19vw;
   width: 100%;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
@@ -646,11 +784,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 6rem;
   color: #dee0e1;
 }
@@ -661,10 +799,10 @@ footer {
     padding: 0 .5rem 0 0;
   }
   header nav .menu {
- 	background-color: #00000096;
-  	-webkit-backdrop-filter: blur(.15rem);
-  	backdrop-filter: blur(.15rem);
-  	text-align: center;
+    background-color: #00000096;
+    -webkit-backdrop-filter: blur(.15rem);
+    backdrop-filter: blur(.15rem);
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -721,23 +859,26 @@ footer {
   }
   div#about {
     height: 220vw;
+    min-height: 40rem;
     width: 100%;
     font-size: 6vw;
   }
   div#about div#about_container {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 1rem 0 0 0;
     width: 80vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     max-width: 85vw;
   }
   div#about div#about_container img#about_containerImage {
+    min-height: 0;
     height: auto;
+    min-width: 0;
     width: auto;
   }
   div#about div#about_container p {
@@ -757,19 +898,20 @@ footer {
   }
   div#services ul#services_container li {
     margin: 10px 0;
-  	padding: 8vw 0;
+    padding: 10vw 1rem;
     min-height: 23rem;
-    height: 70vw;
-    width: 90%;
+    height: 80vw;
+    min-width: 0;
+    width: 100%;
   }
-  div#services ul#services_container li img {
-    height: 25vw;
+  div#services ul#services_container li div img {
+    height: 45vw;
   }
-  div#services ul#services_container li h3 {
-    font-size: 5vw;
+  div#services ul#services_container li div h3 {
+    font-size: 1.2rem;
   }
-  div#services ul#services_container li p {
-    font-size: 3.1vw;
+  div#services ul#services_container li div p {
+    font-size: .8rem;
     max-width: 70%;
   }
   div#projects ul#projects_container {
@@ -780,11 +922,12 @@ footer {
   div#projects ul#projects_container li {
     margin: 10px 0;
     height: auto;
-    width: 90%;
+    min-width: 0;
+    width: 100%;
   }
   div#projects ul#projects_container li button img.background {
-    min-height: 10rem;
-    height: 40vw;
+    min-height: 7rem;
+    height: 50vw;
   }
   div#popup img#popupImg {
     height: 27%;
