@@ -123,7 +123,7 @@ div#home div#background_content ul .icon {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 .5rem;
+  margin: 0 1rem 0 0;
 }
 
 div#home div#background_content ul .icon a:hover {
@@ -579,7 +579,7 @@ div#projects ul#projects_container li button img.background {
   color: transparent;
   min-height: 8rem;
   max-height: 12rem;
-  height: 19vw;
+  height: 12vw;
   width: 100%;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
@@ -848,7 +848,7 @@ footer {
     padding: 40vw 0 0 5%;
   }
   div#home div#background_content h1 {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   h2 {
     font-size: 8vw;
@@ -927,7 +927,7 @@ footer {
   }
   div#projects ul#projects_container li button img.background {
     min-height: 7rem;
-    height: 43vw;
+    height: 40vw;
   }
   div#popup img#popupImg {
     height: 27%;
