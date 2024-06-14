@@ -613,7 +613,7 @@ div#projects ul#projects_container li button:hover img.zoom-in {
 }
 
 div#projects ul#projects_container li p {
-  font-size: 12px;
+  font-size: .9rem;
   color: #dee0e1;
   width: 85%;
   margin: 1rem 0;
@@ -632,7 +632,8 @@ div#projects ul#projects_container li a {
   color: #dee0e1;
   border: none;
   background-color: #7847df;
-  font-size: inherit;
+  font-size: .8rem;
+  text-transform: uppercase;
   cursor: pointer;
   height: 2.5rem;
   width: 6rem;
